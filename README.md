@@ -15,7 +15,8 @@ Tech Stack
 	•	Riverpod (state management)
 	•	just_audio (audio playback)
 
-⸻
+---
+
 App Flow (Data Flow Diagram)
 flowchart TD
     A[JSON File: poses.json] --> B[JsonService]
@@ -26,6 +27,6 @@ flowchart TD
     F --> G[AudioPlayer (just_audio)]
     F --> H[UI Updates: Image, Text, Progress Bar]
 
-⸻
+---
 
 Note: This is a Proof of Concept assignment for internship evaluation at RevoltronX, focused on demonstrating modular design, clean architecture, and an engaging session experience.
