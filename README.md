@@ -13,23 +13,23 @@ Supports intro, looped breathing cycles, and outro — all dynamically loaded.
 
 ## 🛠 Tech Stack
 - Flutter
-- Riverpod (state management)
-- just_audio (audio playback)
+- Riverpod - state management
+- just_audio - audio playback
 
 ## 📂 App Flow (Data Flow Diagram)
 ```mermaid
 flowchart TD
     A[JSON File: poses.json] --> B[JsonService]
     B --> C[SessionModel & related data models]
-    C --> D[SessionController (Riverpod StateNotifier)]
-    D --> E[PreviewScreen: loads and displays session info]
-    D --> F[SessionScreen: handles active session]
-    F --> G[AudioPlayer (just_audio)]
-    F --> H[UI Updates: Image, Text, Progress Bar]
+    C --> D[SessionController - Riverpod StateNotifier]
+    D --> E[PreviewScreen - loads and displays session info]
+    D --> F[SessionScreen - handles active session]
+    F --> G[AudioPlayer - just_audio]
+    F --> H[UI Updates - Image, Text, Progress Bar]
 ```
 
 ## 📸 Demo
-
+*(Add screenshots or GIF later)*
 
 ---
 
