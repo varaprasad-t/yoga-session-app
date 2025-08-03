@@ -1,23 +1,23 @@
-Yoga Session App 🧘‍♂️
+# 🧘‍♂️ Yoga Session App
 
-A Flutter-based guided yoga session app that plays synchronized audio and pose images based on a JSON sequence.
-Supports an intro, multiple looped breathing cycles, and an outro — all dynamically loaded with no code changes required.
+A Flutter-based guided yoga session app.  
+Plays synchronized audio and pose images based on a JSON sequence.  
+Supports intro, looped breathing cycles, and outro — all dynamically loaded.
 
-Features
-	•	📄 JSON-driven session flow – easily add new poses, images, and audio
-	•	🎵 Audio & image sync – smooth transitions in sync with instructions
-	•	⏯ Pause, resume, and restart steps
-	•	📊 Progress bar with timer for each step
-	•	🎯 Loop handling with round tracking
+## ✨ Features
+- 📄 JSON-driven session flow (easily add new poses)
+- 🎵 Audio & image sync
+- ⏯ Pause, resume, and restart steps
+- 📊 Progress bar with timer
+- 🎯 Loop handling with round tracking
 
-Tech Stack
-	•	Flutter
-	•	Riverpod (state management)
-	•	just_audio (audio playback)
+## 🛠 Tech Stack
+- Flutter
+- Riverpod (state management)
+- just_audio (audio playback)
 
----
-
-App Flow (Data Flow Diagram)
+## 📂 App Flow (Data Flow Diagram)
+```mermaid
 flowchart TD
     A[JSON File: poses.json] --> B[JsonService]
     B --> C[SessionModel & related data models]
@@ -26,7 +26,11 @@ flowchart TD
     D --> F[SessionScreen: handles active session]
     F --> G[AudioPlayer (just_audio)]
     F --> H[UI Updates: Image, Text, Progress Bar]
+```
+
+## 📸 Demo
+
 
 ---
 
-Note: This is a Proof of Concept assignment for internship evaluation at RevoltronX, focused on demonstrating modular design, clean architecture, and an engaging session experience.
+**Note:** This is a POC (proof of concept) assignment for internship evaluation.
